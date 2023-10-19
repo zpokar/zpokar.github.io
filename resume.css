@@ -9,8 +9,17 @@
 h2 h3 h4 h5 h1 h6{
     font-size: 15px;
 }
+p{
+    font-size: 10px;
+    margin-block-start: 1.1em;
+    margin-block-end: 1.1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+}
 /* Style the main section with background image */
 /*Background image refrence:https://pixabay.com/photos/plant-succulent-potted-white-space-2004483/*/
+
 .jp{
     width:100%;
     background-size:cover;
@@ -18,17 +27,20 @@ h2 h3 h4 h5 h1 h6{
     background-image: url(image/plant.jpg);
     padding-bottom: 20px;
     position: relative;
+  
 }
 /* Style the navigation bar */
+
 nav{
     display: flex;
-    align-items:right;
     justify-content:space-between;
     padding-top: 20px;
     padding-left: 60%; 
     overflow:hidden;
 }
-
+.home p{
+    font-size: 15px;
+}
 /* Style navigation list items */
 nav ul li{
     list-style-type: none;
@@ -157,6 +169,7 @@ nav ul li a:hover{
     opacity: 70%;
     width:100%;
     background-size: cover;
+   
 }
 /* Style certificate and project headings and lists */
 .certificate h2{
@@ -267,4 +280,39 @@ th{
 .twon a:hover{
     background-color: rgb(236, 245, 160);
     color: rgb(17, 34, 189);
+}
+.back{
+    text-align: right;
+    right:70%;
+    font-size: 20px;
+    background-color: rgb(212, 209, 209);
+}
+.back a:hover{
+    color: blue;
+}
+/*Second page menu*/
+.tow{
+    display: flex;
+    justify-content:space-between;
+    padding-top: 10px;
+    padding-left: 80%; 
+    overflow:hidden;
+    background-color: rgb(212, 209, 209);
+}
+.tow ul li{
+    list-style-type: none;
+    display:inline-block;
+}
+.tow ul li a{
+    float: right;
+    font-size: 14px;
+    color:rgb(12, 12, 12);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+/*give the hoverto the menu so when user go there it turns white*/
+.tow ul li a:hover{
+    color:hsl(120, 25%, 98%);
+    transition:0.4s;
 }
