@@ -1,13 +1,63 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
+<html lang="en">
+    <head>
+          <!--I use this for avoind the windows-1258 error using w3.org:https://www.w3.org/International/questions/qa-html-encoding-declarations-->
+      <meta charset="utf-8">
+       <!-- Setting the viewport for responsive design -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Assignment2
+        </title>
+        <!-- Linking to an external CSS stylesheet for styling -->
+        <link rel="stylesheet" href="resume.css">        
+    </head>
+    <body>
+       <!-- Starting the first section, including navigation and personal information -->
+        <div class="jp">
+            <nav>
+                 <!-- Navigation links and i use the navbar from w3school.com -->
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#AboutMe">About Me</a></li>
+                    <li><a href="second.html" id="project">Project</a></li>
+                    <li><a href="second.html" id="certi">Certificates</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Personal information -->
+            <div id="Home" class="content">
+                <h4>Hello, I' am</h4>
+                <h1>Jainiben Pokar</h1>
+                <h3>Project Management(Ontario College Graduate Certificate)</h3>
+                <p>Conestoga College,Kitchener,Ontario</p>
+                <h3>Master of Science (Geo-informatics)</h3>
+                <p>ISTAR Vallabh Vidyanagar (Sardar Patel University) Anand, Gujarat
+                    (Gold Medalist)</p>
+                <h3>Bachelor of Science(Microbiology)</h3>
+                <p>V.P & R.P.T.P Science College (Sardar Patel University) Anand, Gujarat</p>
+            
+            </div>
+        </div>
+     <!-- About Me section -->
+        <div class="main">
+            <div class="atext">
+                <h2 id ="AboutMe">About Me</h2>
+                <h5>Research Scientists</h5>
+                <!-- Personal description -->
+                <p>
+                    I am Jainiben Pokar, a dedicated and highly motivated professional with a Master's degree in Geo-informatics and a Post-Degree Certificate in Project Management. My strong foundation in satellite image analysis and database management has allowed me to excel in software such as ArcGIS, QGIS, and ENVI. I have experience as a Senior Programmer at GeoGeeks GIS Solution and as a Research Intern at the Indian Space Research Organization, which underscores my commitment to excellence in the field. My academic achievements and numerous certifications reflect my passion for Geo-informatics, driving me to make impactful contributions in spatial technology and research.
+                </p>
 
-<h1 style="background-color:Tomato; font=weight:bold;text-align: center;">WELCOME TO THIS SCIENTIFIC WORLD</h1>
-<p style="background-color:DodgerBlue;font-family: verdana;
-  font-size: 20px;">So many Invention are done and so many in the row so just wait and wait and explore the world and make yourself  HAPPY :)</p>
+            </div>
+        </div>
 
-</body>
+      <!-- Contact information section -->
+        <div class="contact">
+            <h2 id="Contact">Contact Me</h2>
+            <h4>Email:jaip08@outlook.com</h4>
+            <h4>Mobile NO:437-429-7897</h4>
+            <!-- Link to LinkedIn profile -->
+            <a href="https://www.linkedin.com/in/jaini-pokar-395677180/?trk=public-profile-join-page">Visit Linkedin</a>
+        </div>
+    </body>
 </html>
