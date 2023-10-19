@@ -17,28 +17,28 @@ h2 h3 h4 h5 h1 h6{
     background-position:center;
     background-image: url(image/plant.jpg);
     padding-bottom: 20px;
+    position: relative;
 }
 /* Style the navigation bar */
 nav{
     display: flex;
-    align-items:center;
+    align-items:right;
     justify-content:space-between;
-    padding-top: 45px;
-    padding-left: 20%;
-    padding-right: 8%;
+    padding-top: 20px;
+    padding-left: 60%; 
+    overflow:hidden;
 }
+
 /* Style navigation list items */
 nav ul li{
     list-style-type: none;
     display:inline-block;
-    
-   
-
 }
 /* Style navigation links */
 nav ul li a{
-    folat:left;
-    fot-size:14px;
+    float: left;
+    text-align: center;
+    font-size: 14px;
     color:black;
     text-decoration: none;
     font-weight: bold;
@@ -47,8 +47,8 @@ nav ul li a{
 
 /* Style navigation links on hover */
 nav ul li a:hover{
-    color:#538367;
-    transition:4s;
+    color:hsl(145, 22%, 42%);
+    transition:0.4s;
 }
 /* Style the content section */
 .content{
