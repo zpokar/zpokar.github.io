@@ -38,9 +38,7 @@ nav{
     padding-left: 60%; 
     overflow:hidden;
 }
-p{
-    font-size: 15px;
-}
+
 /* Style navigation list items */
 nav ul li{
     list-style-type: none;
@@ -73,6 +71,7 @@ nav ul li a:hover{
     font-family: Gill Sans;
     margin-bottom: 10px;
     margin-top: 5px;
+    font-size: 15px;
 }
 .content h1{
     
@@ -311,7 +310,7 @@ th{
     font-weight: bold;
     text-transform: capitalize;
 }
-/*give the hoverto the menu so when user go there it turns white*/
+/*give the hove rto the menu so when user go there it turns white*/
 .tow ul li a:hover{
     color:hsl(120, 25%, 98%);
     transition:0.4s;
