@@ -9,6 +9,7 @@
 h2 h3 h4 h5 h1 h6{
     font-size: 15px;
 }
+/*for paragarph styleling*/
 p{
     font-size: 10px;
     margin-block-start: 1.1em;
@@ -67,6 +68,7 @@ nav ul li a:hover{
     left: 5%;
     margin-bottom: 20px;
 }
+/* Style content various  about section text elements */
 .content p{
     font-family: Gill Sans;
     margin-bottom: 10px;
@@ -78,14 +80,9 @@ nav ul li a:hover{
     font-size: 75px;
 }
 
-/* Style content various  about section text elements */
 
-.about h1{
- 
-    color:rgb(14, 13, 13);
-    margin:10px 0px 10px;
-    font-size: 75px;
-}
+/* style about section text element*/
+
 .home h3{
     color:rgb(8, 8, 8);
     font-size: 20px;
@@ -100,11 +97,6 @@ nav ul li a:hover{
     font-style: italic;
 }
 /* Style the About me section */
-.about{
-    background-color: lightgrey;
-    width: 100%;
-    padding:100px 0px;
-}
 .atext{
     width:auto;
 }
@@ -162,6 +154,32 @@ nav ul li a:hover{
 }
 
 /* Style the second page (Certificates and Projects) */
+/*Second page menu*/
+.tow{
+    display: flex;
+    justify-content:space-between;
+    padding-top: 10px;
+    padding-left: 80%; 
+    overflow:hidden;
+    background-color: rgb(212, 209, 209);
+}
+.tow ul li{
+    list-style-type: none;
+    display:inline-block;
+}
+.tow ul li a{
+    float: right;
+    font-size: 14px;
+    color:rgb(12, 12, 12);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+/*give the hove rto the menu so when user go there it turns white*/
+.tow ul li a:hover{
+    color:hsl(120, 25%, 98%);
+    transition:0.4s;
+}
 /* Background image reference:https://pixabay.com/photos/stars-sky-night-starry-night-sky-1654074/*/
 .certificate {
     background-image: url(image/star.jpg);
@@ -288,30 +306,4 @@ th{
 }
 .back a:hover{
     color: blue;
-}
-/*Second page menu*/
-.tow{
-    display: flex;
-    justify-content:space-between;
-    padding-top: 10px;
-    padding-left: 80%; 
-    overflow:hidden;
-    background-color: rgb(212, 209, 209);
-}
-.tow ul li{
-    list-style-type: none;
-    display:inline-block;
-}
-.tow ul li a{
-    float: right;
-    font-size: 14px;
-    color:rgb(12, 12, 12);
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: capitalize;
-}
-/*give the hove rto the menu so when user go there it turns white*/
-.tow ul li a:hover{
-    color:hsl(120, 25%, 98%);
-    transition:0.4s;
 }
