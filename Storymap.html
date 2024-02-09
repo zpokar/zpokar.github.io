@@ -1,0 +1,62 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Nextyear Visiting Place in INDIA</title>
+  <style>
+    html, body, #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+    h2{
+        text-align: center;
+    }
+  </style>
+  <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css">
+  <script src="https://js.arcgis.com/4.28/"></script>
+
+  <script>
+  require([
+    "esri/config",
+    "esri/Map",
+    "esri/views/MapView",
+
+    "esri/layers/FeatureLayer"
+
+  ], function(esriConfig, Map, MapView, FeatureLayer) {
+
+  // esriConfig.apiKey = "YOUR_API_KEY";
+
+  const map = new Map({
+    basemap: "oceans"
+  });
+
+  const view = new MapView({
+    container: "viewDiv",
+    map: map,
+    center: [78.9629, 20.5937],
+    zoom: 6
+  });
+
+// Parks and open spaces (polygons)
+  const parksLayer = new FeatureLayer({
+    url: "https://services1.arcgis.com/pMeXRvgWClLJZr3s/arcgis/rest/services/story_assignment/FeatureServer"
+  });
+
+  map.add(parksLayer, 0);
+
+  });
+</script>
+
+</head>
+<body>
+    <div>
+        <h2>
+            Visit to Penensular India: There are many places i would like to visit in India in my next visit which includes few states chattisgrah, and the Gangaetic plains of India.
+        </h2>
+    </div>
+  <div id="viewDiv"></div>
+</body>
+</html>
