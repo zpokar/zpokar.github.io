@@ -27,7 +27,7 @@
 
   ], function(esriConfig, Map, MapView, FeatureLayer) {
 
-  // esriConfig.apiKey = "YOUR_API_KEY";
+  // esriConfig.apiKey = "AAPKb4e67c16c1874a508020753cc6cd3b49Iv6LDVzPvoAtK_jeFkynQdasHOOsaVE9--hBsKo-2b4KDhI4kKnrqwvjuvGAK5D2";
 
   const map = new Map({
     basemap: "oceans"
@@ -40,12 +40,12 @@
     zoom: 6
   });
 
-// Parks and open spaces (polygons)
-  const parksLayer = new FeatureLayer({
+// state and open spaces (polygons)
+  const stateLayer = new FeatureLayer({
     url: "https://services1.arcgis.com/pMeXRvgWClLJZr3s/arcgis/rest/services/story_assignment/FeatureServer"
   });
 
-  map.add(parksLayer, 0);
+  map.add(stateLayer, 0);
 
   });
 </script>
