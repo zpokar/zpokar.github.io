@@ -1,0 +1,140 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>ArcGIS Developers Guide: Display a map (2D)</title>
+  <style>
+    html,
+    body,
+    #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://js.arcgis.com/4.19/esri/themes/light/main.css">
+  <script src="https://js.arcgis.com/4.19/"></script>
+
+  <script>
+    require([
+     "esri/config",
+      "esri/Map",
+      "esri/views/MapView",
+      "esri/Graphic",
+      "esri/layers/GraphicsLayer"
+    
+    ], function(esriConfig,Map, MapView, Graphic, GraphicsLayer) {
+
+      esriConfig.apiKey = "AAPKb4e67c16c1874a508020753cc6cd3b49Iv6LDVzPvoAtK_jeFkynQdasHOOsaVE9--hBsKo-2b4KDhI4kKnrqwvjuvGAK5D2";
+      const map = new Map({
+        basemap: "arcgis-topographic" // Basemap layer
+      });
+
+      const view = new MapView({
+        map: map,
+        center: [78.9629, 20.5937], //India
+        zoom: 4, // scale: 72223.819286
+        container: "viewDiv",
+      });
+      const graphicsLayer = new GraphicsLayer();
+      map.add(graphicsLayer);
+       
+ // Create a polygon geometry
+ const polygon = {
+    type: "polygon",
+    rings: [
+    [
+              77.38049096605982,
+              16.65354144225813
+            ],
+            [
+              77.94549280370495,
+              15.91959597634684
+            ],
+            [
+              79.03970386499157,
+              16.94645267403034
+            ],
+            [
+              79.73376678426007,
+              18.012510965583203
+            ],
+            [
+              81.12124921488981,
+              19.371914490629933
+            ],
+            [
+              81.36023429622139,
+              20.30042308939511
+            ],
+            [
+              80.52311701090622,
+              21.306272775827523
+            ],
+            [
+              79.33710144656368,
+              21.22203547650919
+            ],
+            [
+              78.32318538876581,
+              20.113961323689395
+            ],
+            [
+              77.8754708178916,
+              21.04445461598948
+            ],
+            [
+              76.87620106768986,
+              21.600872766071504
+            ],
+            [
+              75.56270909621782,
+              21.088997810652117
+            ],
+            [
+              75.32501612209896,
+              19.465927645655924
+            ],
+            [
+              77.38049096605982,
+              16.65354144225813
+            ]
+    ]
+ };
+
+ const simpleFillSymbol = {
+    type: "simple-fill",
+    color: [255, 0, 0, 0.8],  // Orange, opacity 80%
+    outline: {
+        color: [255, 255, 255],
+        width: 1
+    }
+ };
+ const popupTemplate = {
+    title: "{Name}",
+    content: "{Description}"
+ }
+ const attributes = {
+    Name: "Graphic",
+    Description: "I am a polygon"
+ }
+ const polygonGraphic = new Graphic({
+    geometry: polygon,
+    symbol: simpleFillSymbol,
+    attributes: attributes,
+    popupTemplate: popupTemplate
+
+ });
+ graphicsLayer.add(polygonGraphic);
+    });
+  </script>
+</head>
+
+<body>
+  <div id="viewDiv"></div>
+</body>
+
+</html>
