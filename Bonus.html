@@ -3,21 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Canada Provinces</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Canada Provinces Map For Kids</title>
   <style>
     #mapDiv {
       height: 400px;
     }
     .canada h1,p{
         text-align: center;
+        font-family:Courier;
     }
     .canada img{
         width: 100%;
         height: 100%;
         align-items: center;
     }
-    /* Container holding the image and the text */
+ /* Container holding the image and the text */
+/*Reference:https://www.w3schools.com/howto/howto_css_image_text_blocks.asp*/
 .container {
   position: relative;
 }
@@ -38,7 +39,7 @@
   </style>
 </head>
 <body>
-
+<!--All Content Information About Province Refrence:https://en.wikipedia.org/wiki/Canada-->
   <!-- First section with Canadian flag -->
     <div class="canada">
         <h1>Welcome to the Canada</h1>
@@ -47,6 +48,7 @@
       </div>
     </div>
   <!-- Second section with information about provinces -->
+  <!--Reference:https://www.w3schools.com/howto/howto_css_image_text_blocks.asp-->
   <div class="container">
     <img src="Alberta.png" alt="Alberta">
     <div class="text-block">
@@ -138,13 +140,9 @@
       <p>Yukon is the westernmost and smallest of Canada's three territories. It also is the least populated province or territory in Canada, with a population of only 42,154 as reported in the 2016 Census. Whitehorse, the territorial capital and Yukon's only city, is the largest settlement in any of the three territories.</p>
     </div>
   </div>
-
   <!-- Third section with map -->
     <div id="mapDiv">
       <iframe src="https://fleming.maps.arcgis.com/apps/instant/interactivelegend/index.html?appid=90d6a37f7dce48f5b85cba48b879aa80" width=100% height="600" frameborder="0" style="border:0" allowfullscreen>iFrames are not supported on this page.</iframe>
     </div>
-
-
-
 </body>
 </html>
