@@ -20,14 +20,19 @@
  /* Container holding the image and the text */
 /*Reference:https://www.w3schools.com/howto/howto_css_image_text_blocks.asp*/
 .container {
-  position: relative;
+ align-items: center;
 }
 .container img{
-  width: 100%;
+  width: 50%;
+  margin-left: 25%;
+  align-items: center;
 }
 
 /* Bottom right text */
 .text-block {
+  align-items: center;
+  margin-left: 25%;
+  margin-right: 25%;
  
   bottom: 20px;
   right: 20px;
@@ -36,13 +41,19 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+.text-block h4{
+  font-size: 30px;
+}
+.text-block p{
+  font-size: 20px;
+}
   </style>
 </head>
 <body>
 <!--All Content Information About Province Refrence:https://en.wikipedia.org/wiki/Canada-->
   <!-- First section with Canadian flag -->
     <div class="canada">
-        <h1>Welcome to the Canada</h1>
+        <h1>Let's Explore Canada</h1>
         <p>Canada is a country in North America. Its ten provinces and three territories extend from the Atlantic Ocean to the Pacific Ocean and northward into the Arctic Ocean, making it the world's second-largest country by total area, with the world's longest coastline. Its border with the United States is the world's longest international land border. The country is characterized by a wide range of both meteorologic and geological regions. It is a sparsely inhabited country of 40 million people, the vast majority residing south of the 55th parallel in urban areas. Canada's capital is Ottawa and its three largest metropolitan areas are Toronto, Montreal, and Vancouver.</p>
         <img src="image/canada.jpg" alt="Canadian Flag">
       </div>
