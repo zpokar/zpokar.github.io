@@ -58,9 +58,9 @@
     "esri/views/MapView",
     "esri/widgets/Legend"
   ], function(esriConfig, WebMap, MapView,Legend) {
-  // esriConfig.apiKey = "YOUR_API_KEY";
+  // esriConfig.apiKey = "YOUR_API_KEY";(we can even put the API key)
 
-  // Create a new web map instance with the ID of your web map
+  // Create a new map where we connect the our web map which we publish on the ArcGIS online account and just put the item id on our web map
   const webmap = new WebMap({
     portalItem: {
       id: "5f21f6e03b8d40a1952c61ab1a5e7513"
@@ -74,7 +74,7 @@
     zoom: 2,
     center: [-106.3468, 56.1304]
   });
-  // Create a legend widget
+  // Create a legend of map
   const legend = new Legend({
     view: view,
     container: "legendDiv"
